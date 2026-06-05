@@ -13,7 +13,7 @@
         header {
             background-color: darkblue;
             color: white;
-            text-align: center;
+            height: 220px;
             padding: 20px;
 
         }
@@ -43,28 +43,72 @@
         }
 
         footer {
-            background-color: black;
+            background-color: #f2f2f2;
             color: white;
+            margin-top: 40px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .footer-box {
+            background-color: darkblue;
+            border-radius: 10px;
+            padding: 15px;
+            width: 45%;
+        }
+        .footer-box h2 {
+            color: orange;
+            margin-bottom: 15px;
+        }
+        .footer-box a {
+                color: white;
+                text-decoration: none;
+                line-height: 30px;
+        }
+        .footer-bottom {
+            background-color: #111;
+            font-size: 14px;
             text-align: center;
             padding: 15px;
         }
+
         img {
-            margin-left: -950px;
-            margin-top: -115px;
+            left:10px;
+            top: 10px;
+            position: fixed;
+        }
+        .header-text {
+            margin-left: 320px;
+            padding-top: 40px;
+        }
+        .header-text2 {
+            text-align: right;
+            margin-right: 10px;
+            position: relative;
+            top: -100px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>ABC Engineering College</h1>
-        <p>Welcome to Our College Website</p>
+        <div class="header-text">
+            <h1>ABC Engineering College</h1>
+            <p>Welcome to Our College Website</p>
+        </div>
+        <div class="header-text2">
+            <h1>Get in Touch</h1>
+            <p>phone:123456789</p>
+            <p>email:abc@gmail..com</p>
+        </div>
         <img src="abc.png" alt="College Image" width="200">
     </header>
     <nav>
-        <a href="">Home</a>
-        <a href="">Courses</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <a href="cssapply.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <section>
         <!--Inline CSS-->
@@ -95,7 +139,24 @@
 
     </section>
     <footer>
-        <p>&copy; 2026 ABC Engineering College | All Rights Reserved</p>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2>Quick Links</h2>
+                <a href="cssapply.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="courses.html">Courses</a><br>
+                <a href="contact.html">Contact</a><br>
+            </div>
+            <div class="footer-box">
+                <h2>Contact Us</h2>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email:abc@gmail.com</p>
+                <p>location: 123 College St, City, Country</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Since 1995 : 2026 ABC Engineering College. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>

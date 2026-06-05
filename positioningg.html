@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Positioning Demo</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        background:#f4f4f4;
+    }
+
+    h1{
+        text-align:center;
+        padding:20px;
+        background:#333;
+        color:white;
+    }
+
+    .section{
+        margin:30px;
+        padding:20px;
+        border:2px solid #ccc;
+        background:white;
+    }
+
+    .section h2{
+        text-align:center;
+    }
+
+    img{
+        width:200px;
+        height:150px;
+        border:3px solid black;
+    }
+
+    /* Static Position */
+    .static-img{
+        position:static;
+    }
+
+    /* Relative Position */
+    .relative-img{
+        position:relative;
+        left:50px;
+        top:20px;
+    }
+
+    /* Absolute Position */
+    .absolute-container{
+        position:relative;
+        height:300px;
+        border:2px  red;
+    }
+
+    .absolute-img{
+        position:absolute;
+        top:50px;
+        right:50px;
+    }
+
+    /* Fixed Position */
+    .fixed-img{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        
+    }
+
+    /* Sticky Position */
+    .sticky-img{
+        position:sticky;
+        top:10px;
+        width:180px;
+        height:120px;
+    }
+
+    .content{
+        height:800px;
+        padding:20px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>CSS Positioning Examples</h1>
+
+<!-- Static -->
+<div class="section">
+    <h2>1. Static</h2>
+    <p>Default</p>
+    <img src="https://picsum.photos/id/1015/200/150"
+         alt="Static Image"
+         class="static-img">
+</div>
+
+<!-- Relative -->
+<div class="section">
+    <h2>2. Relative </h2>
+    <p>Moved from normal position</p>
+    <img src="https://picsum.photos/id/1025/200/150"
+         alt="Relative Image"
+         class="relative-img">
+</div>
+
+<!-- Absolute -->
+<div class="section absolute-container">
+    <h2>3. Absolute </h2>
+    <p>Positioned relative to the nearest position.</p>
+    <img src="https://picsum.photos/id/1035/200/150"
+         alt="Absolute Image"
+         class="absolute-img">
+</div>
+
+<!-- Sticky -->
+<div class="section">
+    <h2>4. Sticky </h2>
+
+    <img src="https://picsum.photos/id/1040/200/150"
+         alt="Sticky Image"
+         class="sticky-img">
+
+    <div class="content">
+        <p>
+            for scroll
+        </p>
+    </div>
+</div>
+
+<!-- Fixed -->
+<img src="https://picsum.photos/id/1060/100/100"
+     alt="Fixed Image"
+     class="fixed-img">
+
+</body>
+</html>

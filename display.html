@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex and Grid </title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    background:#f4f4f4;
+}
+
+h1,h2{
+    text-align:center;
+}
+
+img{
+    width:200px;
+    height:150px;
+    border:2px solid black;
+}
+
+/*FLEX*/
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+}
+.flex-row-reverse{
+    display:flex;
+    flex-direction:row-reverse;
+    gap:15px;
+}
+.flex-column-reverse{
+    display:flex;
+    flex-direction:column-reverse;
+    gap:15px;
+}
+/* GRID */
+.grid1{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap:15px;
+}
+.grid2{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    gap:15px;
+}
+.grid3{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:15px;
+}
+.grid4{
+    display:grid;
+    grid-template-columns:80px 200px auto;
+    gap:15px;
+}
+
+.section{
+    background:white;
+    padding:20px;
+    margin-bottom:30px;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Flex and Grid </h1>
+
+<div class="section">
+    <h2> Row</h2>
+    <div class="flex-row">
+        <img src="https://picsum.photos/id/101/200/150">
+        <img src="https://picsum.photos/id/102/200/150">
+        <img src="https://picsum.photos/id/103/200/150">
+    </div>
+</div>
+
+<div class="section">
+    <h2>Row Reverse</h2>
+    <div class="flex-row-reverse">
+        <img src="https://picsum.photos/id/101/200/150">
+        <img src="https://picsum.photos/id/102/200/150">
+        <img src="https://picsum.photos/id/103/200/150">
+    </div>
+</div>
+
+<div class="section">
+    <h2>Column Reverse</h2>
+    <div class="flex-column-reverse">
+        <img src="https://picsum.photos/id/103/200/150">
+        <img src="https://picsum.photos/id/102/200/150">
+        <img src="https://picsum.photos/id/101/200/150">
+    </div>
+</div>
+
+<div class="section">
+    <h2>1fr 2fr 1fr</h2>
+    <div class="grid1">
+        <img src="https://picsum.photos/id/119/200/150">
+        <img src="https://picsum.photos/id/120/200/150">
+        <img src="https://picsum.photos/id/121/200/150">
+    </div>
+</div>
+
+<div class="section">
+    <h2>1fr 1fr 1fr</h2>
+    <div class="grid2">
+        <img src="https://picsum.photos/id/119/200/150">
+        <img src="https://picsum.photos/id/120/200/150">
+        <img src="https://picsum.photos/id/121/200/150">
+        <img src="https://picsum.photos/id/101/200/150">
+        <img src="https://picsum.photos/id/102/200/150">
+        <img src="https://picsum.photos/id/103/200/150">
+        <img src="https://picsum.photos/id/119/200/150">
+        <img src="https://picsum.photos/id/120/200/150">
+        <img src="https://picsum.photos/id/121/200/150">
+        <img src="https://picsum.photos/id/101/200/150">
+        <img src="https://picsum.photos/id/102/200/150">
+        <img src="https://picsum.photos/id/103/200/150">
+    </div>
+</div>
+<div class="section">
+    <h2> repeat(5, 1fr)</h2>
+    <div class="grid3">
+    <img src="https://picsum.photos/id/119/200/150">
+    <img src="https://picsum.photos/id/120/200/150">
+    <img src="https://picsum.photos/id/121/200/150">
+    <img src="https://picsum.photos/id/101/200/150">
+    <img src="https://picsum.photos/id/102/200/150">
+    <img src="https://picsum.photos/id/103/200/150">
+    <img src="https://picsum.photos/id/119/200/150">
+    <img src="https://picsum.photos/id/120/200/150">
+    <img src="https://picsum.photos/id/121/200/150">
+    </div>
+</div>
+<div class="section">
+    <h2>80px 200px auto</h2>
+    <div class="grid4">
+    <img src="https://picsum.photos/id/119/200/150">
+    <img src="https://picsum.photos/id/120/200/150">
+    <img src="https://picsum.photos/id/121/200/150">
+    <img src="https://picsum.photos/id/119/200/150">
+    <img src="https://picsum.photos/id/120/200/150">
+    <img src="https://picsum.photos/id/121/200/150">
+    <img src="https://picsum.photos/id/101/200/150">
+    <img src="https://picsum.photos/id/102/200/150">
+    <img src="https://picsum.photos/id/103/200/150">
+    </div>
+</body>
+</html>
