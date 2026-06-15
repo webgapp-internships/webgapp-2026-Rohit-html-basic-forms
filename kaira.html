@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UrbanStyle Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+header{
+    background:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px;
+    background:white;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.btn{
+    background:black;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+}
+
+.hero img{
+    width:45%;
+    border-radius:10px;
+}
+
+.section-title{
+    text-align:center;
+    margin:50px 0 30px;
+    font-size:35px;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:0 50px;
+}
+
+.category{
+    background:white;
+    padding:20px;
+    text-align:center;
+}
+
+.category img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:0 50px 50px;
+}
+
+.product{
+    background:white;
+    padding:15px;
+    text-align:center;
+}
+
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin:15px 0 10px;
+}
+
+.testimonial{
+    background:white;
+    text-align:center;
+    padding:60px;
+}
+
+.newsletter{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.newsletter input{
+    width:300px;
+    padding:12px;
+    margin-top:15px;
+}
+
+.newsletter button{
+    padding:12px 20px;
+    border:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    padding:40px 50px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.footer-grid li{
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+}
+
+.hero-text,
+.hero img{
+    width:100%;
+}
+
+.categories,
+.products{
+    grid-template-columns:1fr;
+}
+
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">UrbanStyle</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Modern Fashion For Everyday Life</h1>
+        <p>
+            Discover premium clothing and accessories
+            designed for comfort, style, and confidence.
+        </p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <img src="https://picsum.photos/800/500?random=1">
+</section>
+
+<h2 class="section-title">Shop By Category</h2>
+
+<section class="categories">
+
+    <div class="category">
+        <img src="https://picsum.photos/400/300?random=2">
+        <h3>Men Collection</h3>
+    </div>
+
+    <div class="category">
+        <img src="https://picsum.photos/400/300?random=3">
+        <h3>Women Collection</h3>
+    </div>
+
+    <div class="category">
+        <img src="https://picsum.photos/400/300?random=4">
+        <h3>Accessories</h3>
+    </div>
+
+</section>
+
+<h2 class="section-title">Featured Products</h2>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://picsum.photos/300/300?random=5">
+        <h3>Classic Jacket</h3>
+        <p>$89</p>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/300/300?random=6">
+        <h3>Casual Shirt</h3>
+        <p>$45</p>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/300/300?random=7">
+        <h3>Leather Bag</h3>
+        <p>$60</p>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/300/300?random=8">
+        <h3>Modern Sneakers</h3>
+        <p>$95</p>
+    </div>
+
+</section>
+
+<section class="testimonial">
+    <h2>Customer Reviews</h2>
+    <br>
+    <p>
+        "Amazing quality and fast delivery. The products
+        look exactly as described."
+    </p>
+    <br>
+    <h4>Rohit</h4>
+</section>
+
+<section class="newsletter">
+    <h2>Subscribe To Our Newsletter</h2>
+    <br>
+    <p>Get updates about new arrivals</p>
+    <br>
+
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+    <div>
+        <h3>UrbanStyle</h3>
+        <br>
+        <p>
+            Premium fashion and lifestyle products
+            for modern customers.
+        </p>
+    </div>
+
+    <div>
+        <h3>Quick Links</h3>
+        <br>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Collections</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Support</h3>
+        <br>
+        <ul>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <br>
+        <ul>
+            <li>7010776572</li>
+            <li>@urbanstyle.com</li>
+            <li>thiru nagar,madurai</li>
+        </ul>
+    </div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
